@@ -102,18 +102,7 @@ String currency: Đơn vị tiền tệ (VNĐ, USD).
 - applyMassPriceUpdate(double ratio): Cập nhật giá đồng loạt (ví dụ: tăng 10% toàn bộ).
 - setPromotionalPrice(String id, double promoPrice): Thiết lập giá khuyến mãi tạm thời.
 
-
-## 10. FileManager (tep tin)
-String dataPath: Đường dẫn mặc định đến thư mục lưu trữ file (ví dụ: "C:/data/products.csv").
-
-String backupPath: Đường dẫn thư mục sao lưu.
-
-- Saves and loads product data from files (e.g., TXT, CSV).
-- exportToCSV(List<Product> list, String path): Xuất dữ liệu ra file CSV.
-- importFromTXT(String path): Đọc dữ liệu từ file văn bản vào hệ thống.
-
-
-## 11. SystemManager (quan ly he thong)
+## 10. SystemManager (quan ly he thong)
 String version: Phiên bản phần mềm (ví dụ: "v1.0.2").
 
 boolean isDataLoaded: Trạng thái kiểm tra dữ liệu đã được tải lên từ file chưa.

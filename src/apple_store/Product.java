@@ -9,37 +9,54 @@ package apple_store;
  * @author FOTZS41
  */
 public class Product {
-    private String productId;
-    private String productName;
+    private String id;
+    private String name;
     private double price;
     private int quantity;
     private String description;
-    private Category category;
-    private Suppiler supplier;
+    private String categoryId;
 
-    public Product(String productId, String productName, double price, int quantity,
-                   String description, Category category, Suppiler supplier) {
-        this.productId = productId;
-        this.productName = productName;
-        this.price = price;
-        this.quantity = quantity;
-        this.description = description;
-        this.category = category;
-        this.supplier = supplier;
+    public String getId() {
+        return id;
     }
 
-    // Getter & Setter
-    public String getProductId() { return productId; }
-    public String getProductName() { return productName; }
-    public double getPrice() { return price; }
-    public int getQuantity() { return quantity; }
-    public Category getCategory() { return category; }
+    public String getName() {
+        return name;
+    }
 
-    public void setPrice(double price) { this.price = price; }
-    public void setQuantity(int quantity) { this.quantity = quantity; }
+    public double getPrice() {
+        return price;
+    }
 
-    public void displayInfo() {
-        System.out.println(productId + " - " + productName + " - $" + price);
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public String getCategoryId() {
+        return categoryId;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setCategoryId(String categoryId) {
+        this.categoryId = categoryId;
     }
 }
-

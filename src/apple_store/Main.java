@@ -8,13 +8,14 @@ package apple_store;
  *
  * @author FOTZS41
  */
-public class Apple_Store {
+import java.util.Scanner;
 
-    /**
-     * @param args the command line arguments
-     */
+public class Main {
     public static void main(String[] args) {
-        // TODO code application logic here
+        SystemManager systemManager = new SystemManager();
+        Menu menu = new Menu(systemManager);
+
+        systemManager.initSystem();
+        menu.start();
     }
-    
 }

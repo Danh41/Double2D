@@ -8,15 +8,24 @@ package apple_store;
  *
  * @author FOTZS41
  */
-
-import java.util.List;
+import java.util.*;
 
 public class SearchService {
+    private List<Product> lastSearchResults = new ArrayList<>();
+
+    public List<Product> searchByName(List<Product> products, String name) {
+        lastSearchResults.clear();
+        for (Product p : products) {
+            if (p.getName().toLowerCase().contains(name.toLowerCase())) {
+                lastSearchResults.add(p);
+            }
+        }
+        return lastSearchResults;
+    }
+
     public Product searchById(List<Product> products, String id) {
         for (Product p : products) {
-            if (p.getProductId().equals(id)) {
-                return p;
-            }
+            if (p.getId().equals(id)) return p;
         }
         return null;
     }
