@@ -412,6 +412,10 @@ flowchart TD
     C -->|5| H --> B
     C -->|6| I --> B
     C -->|0| J --> K
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4a373ebe8b71140cfcc4e6e721bd302a21864f4a
 # Apple Store – Feature Description
 
 
@@ -722,4 +726,8 @@ Product <|-- Mac
 code này khi vẽ phần method có 2 dấu 2 chấm sửa lại
 
 viết lại 2 class ip và mac trường hợp mà nó không kế thừa product (đễ dễ so sánh kế thừa với ko)
+<<<<<<< HEAD
 kế thừa tiếng anh là gì
+=======
+kế thừa tiếng anh là gì
+>>>>>>> 4a373ebe8b71140cfcc4e6e721bd302a21864f4a
